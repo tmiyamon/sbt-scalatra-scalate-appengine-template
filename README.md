@@ -1,5 +1,5 @@
 # Scalatra-Scalate template project for appengine
-This template project is based on https://github.com/scalatra/scalatra-sbt-prototype.
+This template project is based on https://github.com/scalatra/scalatra-sbt-prototype
 
 1. Clone this repository:
 
