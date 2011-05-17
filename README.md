@@ -5,25 +5,29 @@ This template project is based on https://github.com/scalatra/scalatra-sbt-proto
 
         git clone git://github.com/tmiyamon/sbt-scalatra-scalate-appengine-template.git my-app
 
-2. Change directory into your clone:
+2. Set env. For more detail, refer to [Yasushi's sbt-appengine-plugin](https://github.com/Yasushi/sbt-appengine-plugin).
+
+        export APPENGINE_SDK_HOME=/your/appengine/sdk/home/path
+
+3. Change directory into your clone:
 
         cd my-app
 
-3. Launch [SBT](http://code.google.com/p/simple-build-tool).
+4. Launch [SBT](http://code.google.com/p/simple-build-tool).
 
         sbt
 
-4. At SBT prompt, fetch the dependencies.  Do this the first time and also whenever you change the project definition.
+5. At SBT prompt, fetch the dependencies.  Do this the first time and also whenever you change the project definition.
 
         update
 
-5. Run dev-appengine server
+6. Run dev-appengine server
 
         dev-appserver-start
 
-6. Precompile scalate template
+7. Precompile scalate template
 
-        precompile-template
+        precompile-templates
 
-7. Go to http://localhost:8080/.
+8. Go to http://localhost:8080/
 
