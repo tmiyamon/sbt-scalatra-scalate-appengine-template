@@ -11,7 +11,7 @@ This template project is based on https://github.com/scalatra/scalatra-sbt-proto
 
 3. Launch [SBT](http://code.google.com/p/simple-build-tool).
 
-        ./sbt
+        sbt
 
 4. At SBT prompt, fetch the dependencies.  Do this the first time and also whenever you change the project definition.
 
