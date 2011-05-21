@@ -18,4 +18,8 @@ class MyProject(info: ProjectInfo) extends AppengineProject(info) with org.fuses
   val sonatypeNexusSnapshots = "Sonatype Nexus Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
   // For Scalate
   val fuseSourceSnapshots = "FuseSource Snapshot Repository" at "http://repo.fusesource.com/nexus/content/repositories/snapshots"
+
+  override def precompileTemplatesAction = super.precompileTemplatesAction dependsOn(prepareWebappAction) 
+  override def devAppserverStartAction = task{ args => devAppserverStartTask(args) dependsOn(precompileTemplates) }
+  override def updateWebappAction = task{ opts => appcfgTask("update", None, opts) dependsOn(precompileTemplates) } describedAs("Create or update an app version with precompiled templates.") 
 }

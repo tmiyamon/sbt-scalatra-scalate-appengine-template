@@ -25,9 +25,9 @@ This template project is based on https://github.com/scalatra/scalatra-sbt-proto
 
         dev-appserver-start
 
-7. Precompile scalate template
+7. Go to http://localhost:8080/
 
-        precompile-templates
+8. Deploy to your appengine
 
-8. Go to http://localhost:8080/
+        update-webapp
 
